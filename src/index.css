@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Use Tailwaind css to create component */
+@layer components {
+  .error-msg {
+    @apply text-red-500 text-base;
+  }
+
+  .center-uploadContent {
+    @apply text-center mb-2;
+  }
+
+  .btn-colorpick {
+    @apply border px-2 py-[1px] bg-white text-black border-amber-300 transition duration-500 mr-4;
+  }
+
+  .btn-colorpick:hover {
+    @apply text-white bg-amber-500 transition duration-500;
+  }
+
+  .btn-blue {
+    @apply bg-blue-500 hover: bg-blue-700 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .btn-download {
+    @apply bg-[#DB4437] border px-3 mt-1 mb-3 transition duration-500 text-white;
+  }
+
+  .btn-download:hover {
+    @apply bg-[#FFF] border border-[#DB4437] px-3 mt-1 mb-3 transition duration-500 text-[#DB4437];
+  }
+}
+
+/* Style the input type */
+input[type="file"]::file-selector-button {
+  background-color: white;
+  color: black;
+  padding-top: 0rem;
+  padding-bottom: 0px;
+
+  border: 1px solid black;
+  padding-left: 0.7rem /* 8px */;
+  padding-right: 0.7rem /* 8px */;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: #4285f4;
+  color: white;
+  border-color: #4285f4;
+}
