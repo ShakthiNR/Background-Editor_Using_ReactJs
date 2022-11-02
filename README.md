@@ -7,5 +7,11 @@ Implement transparent background editor
 4. On entering the background color, the editor should replace the background color in the image with transparency.
 5. At any point, the image can be downloaded from editor as PNG file with the transparent background.
 
+Techstack:
+React Js
+TailwindCss
+HTML, CSS
 
-![image](https://user-images.githubusercontent.com/111413484/199420817-28a9a950-4d6a-434c-9095-deb2f5b5b8b2.png)
+Libraries Uses: html-to-image
+
+
